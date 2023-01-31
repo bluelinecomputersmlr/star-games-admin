@@ -1,0 +1,5 @@
+[26-Jul-2020 12:10:33 Etc/GMT] PHP Catchable fatal error:  Object of class TagFilterNodes could not be converted to string in /home/codegvgr/public_html/projects/doxy/index.php on line 30
+[26-Jul-2020 12:12:23 Etc/GMT] PHP Warning:  str_replace() expects at least 3 parameters, 2 given in /home/codegvgr/public_html/projects/doxy/index.php on line 40
+[26-Jul-2020 12:12:23 Etc/GMT] PHP Warning:  str_replace() expects at least 3 parameters, 2 given in /home/codegvgr/public_html/projects/doxy/index.php on line 40
+[26-Jul-2020 12:12:23 Etc/GMT] PHP Warning:  str_replace() expects at least 3 parameters, 2 given in /home/codegvgr/public_html/projects/doxy/index.php on line 40
+[26-Jul-2020 12:12:23 Etc/GMT] PHP Warning:  str_replace() expects at least 3 parameters, 2 given in /home/codegvgr/public_html/projects/doxy/index.php on line 40

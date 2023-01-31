@@ -1,0 +1,195 @@
+[01-Jul-2021 12:47:16 UTC] PHP Warning:  include(../admin/connection/config.php): failed to open stream: No such file or directory in /home/host0032/public_html/matka_lover/appadmin/connection/config.php on line 2
+[01-Jul-2021 12:47:16 UTC] PHP Warning:  include(../admin/connection/config.php): failed to open stream: No such file or directory in /home/host0032/public_html/matka_lover/appadmin/connection/config.php on line 2
+[01-Jul-2021 12:47:16 UTC] PHP Warning:  include(): Failed opening '../admin/connection/config.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/host0032/public_html/matka_lover/appadmin/connection/config.php on line 2
+[01-Jul-2021 12:47:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function query() in /home/host0032/public_html/matka_lover/appadmin/api/chart/getChart.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/host0032/public_html/matka_lover/appadmin/api/chart/getChart.php on line 6
+[04-Jul-2021 18:56:24 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 53
+[04-Jul-2021 18:56:24 Asia/Kolkata] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 53
+[04-Jul-2021 18:56:24 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 55
+[04-Jul-2021 18:57:46 Asia/Kolkata] PHP Notice:  Undefined index: result in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 53
+[04-Jul-2021 18:57:46 Asia/Kolkata] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 53
+[04-Jul-2021 18:57:46 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 55
+[18-Jul-2021 19:18:54 Asia/Kolkata] PHP Notice:  Undefined index: result in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 53
+[18-Jul-2021 19:18:54 Asia/Kolkata] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 53
+[18-Jul-2021 19:18:54 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/andrqeah/public_html/projects/betplay_starline/appadmin/api/chart/getChart.php on line 55
+[01-Feb-2022 17:14:02 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[01-Feb-2022 17:14:02 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[01-Feb-2022 17:14:02 Asia/Kolkata] PHP Warning:  include(): Failed opening '/home/andrqeah/public_html/projects/srk_game/server/functions.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[01-Feb-2022 18:20:08 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[01-Feb-2022 18:20:08 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[01-Feb-2022 18:20:08 Asia/Kolkata] PHP Warning:  include(): Failed opening '/home/andrqeah/public_html/projects/srk_game/server/functions.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[11-Apr-2022 23:51:06 America/Chicago] PHP Warning:  include(../../admin/connection/config.php): failed to open stream: No such file or directory in /home2/srkgac2u/public_html/api/chart/getChart.php on line 2
+[11-Apr-2022 23:51:06 America/Chicago] PHP Warning:  include(../../admin/connection/config.php): failed to open stream: No such file or directory in /home2/srkgac2u/public_html/api/chart/getChart.php on line 2
+[11-Apr-2022 23:51:06 America/Chicago] PHP Warning:  include(): Failed opening '../../admin/connection/config.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home2/srkgac2u/public_html/api/chart/getChart.php on line 2
+[11-Apr-2022 23:51:06 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function query() in /home2/srkgac2u/public_html/api/chart/getChart.php:6
+Stack trace:
+#0 {main}
+  thrown in /home2/srkgac2u/public_html/api/chart/getChart.php on line 6
+[26-May-2022 14:07:18 Asia/Kolkata] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/srkgac2u/public_html/api/chart/getChart.php on line 53
+[26-May-2022 14:07:18 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 55
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:35:33 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[02-Jun-2022 05:37:28 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[06-Jun-2022 04:34:03 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[10-Jun-2022 11:42:25 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:37 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[14-Jun-2022 00:36:38 Asia/Kolkata] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/srkgac2u/public_html/game/closed/connection/lib/lib.php on line 48
+[14-Jun-2022 00:36:38 Asia/Kolkata] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/srkgac2u/public_html/game/closed/connection/lib/lib.php on line 48
+[14-Jun-2022 00:36:38 Asia/Kolkata] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/srkgac2u/public_html/api/chart/getChart.php on line 53
+[14-Jun-2022 00:36:38 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 55
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[19-Jun-2022 15:55:02 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[29-Jun-2022 16:24:42 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62
+[01-Jul-2022 10:50:49 Asia/Kolkata] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/srkgac2u/public_html/api/chart/getChart.php on line 62

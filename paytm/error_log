@@ -1,0 +1,21 @@
+[10-Apr-2021 16:35:22 Asia/Kolkata] PHP Notice:  Undefined variable: con in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:35:22 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:36:20 Asia/Kolkata] PHP Notice:  Undefined variable: con in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:36:20 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:37:33 Asia/Kolkata] PHP Notice:  Undefined variable: con in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:37:33 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:38:25 Asia/Kolkata] PHP Notice:  Undefined variable: con in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:38:25 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/andrqeah/public_html/projects/bet/paytm/pgRedirect.php on line 74
+[10-Apr-2021 16:38:32 Asia/Kolkata] PHP Notice:  Undefined variable: con in /home/andrqeah/public_html/projects/bet/paytm/pgResponse.php on line 64
+[10-Apr-2021 16:38:32 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/andrqeah/public_html/projects/bet/paytm/pgResponse.php on line 64
+[10-Apr-2021 16:38:32 Asia/Kolkata] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/andrqeah/public_html/projects/bet/paytm/pgResponse.php on line 64
+[10-Apr-2021 16:38:32 Asia/Kolkata] PHP Notice:  Undefined variable: con in /home/andrqeah/public_html/projects/bet/paytm/pgResponse.php on line 69
+[10-Apr-2021 16:38:32 Asia/Kolkata] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/andrqeah/public_html/projects/bet/paytm/pgResponse.php on line 69
+[10-Apr-2021 16:38:32 Asia/Kolkata] PHP Notice:  Undefined variable: amount in /home/andrqeah/public_html/projects/bet/paytm/pgResponse.php on line 72
+[10-Apr-2021 16:40:50 Asia/Kolkata] PHP Notice:  Undefined variable: amount in /home/andrqeah/public_html/projects/bet/paytm/pgResponse.php on line 72
+[29-Jan-2022 14:13:21 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[29-Jan-2022 14:13:21 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[29-Jan-2022 14:13:21 Asia/Kolkata] PHP Warning:  include(): Failed opening '/home/andrqeah/public_html/projects/srk_game/server/functions.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[29-Jan-2022 14:13:29 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[29-Jan-2022 14:13:29 Asia/Kolkata] PHP Warning:  include(/home/andrqeah/public_html/projects/srk_game/server/functions.php): failed to open stream: No such file or directory in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
+[29-Jan-2022 14:13:29 Asia/Kolkata] PHP Warning:  include(): Failed opening '/home/andrqeah/public_html/projects/srk_game/server/functions.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/andrqeah/public_html/projects/srk_game/admin/connection/config.php on line 54
