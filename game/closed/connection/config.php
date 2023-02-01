@@ -11,7 +11,16 @@ $stamp = time();
 
 $firebase_key = "AAAAJSYRiuQ:";
 
-define("firebase_key","$firebase_key");               /** ENTER DATABASE USER PASSWORD */
+define("firebase_key","$firebase_key");               
+
+/** ENTER DATABASE USER PASSWORD */
+define("host","localhost");
+
+define("db_user","root");
+
+define("db_pass","StarGames@2023");
+
+define("db_name","andrqeah_star_games");
 
 include "lib/lib.php";
 
