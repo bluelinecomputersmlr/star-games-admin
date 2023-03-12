@@ -9,7 +9,7 @@ while($g = fetch($gatConfig)){
 }
 
 
-$check = query("SELECT * FROM `app_updates` where ORDER BY sn DESC LIMIT 1");
+$check = query("SELECT * FROM `app_updates` ORDER BY sn DESC;");
 if(rows($check) > 0){
     
     $info = fetch($check);
