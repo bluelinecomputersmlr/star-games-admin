@@ -9,13 +9,13 @@ while($g = fetch($gatConfig)){
 }
 
 
-$check = query("SELECT * FROM `app_updates` where version > $version order by version desc limit 1");
+$check = query("SELECT * FROM `app_updates` where ORDER BY sn DESC LIMIT 1");
 if(rows($check) > 0){
     
     $info = fetch($check);
-    $data['update_link'] = $info['link'];
+    // $data['update_link'] = $info['link'];
     $data['update_log'] = $info['log'];
-    $data['update'] = "1";
+    $data['version'] = $info['version'];
 } else {
     
     $data['update'] = "0";
