@@ -16,6 +16,7 @@ if(rows($check) > 0){
     // $data['update_link'] = $info['link'];
     $data['update_log'] = $info['log'];
     $data['version'] = $info['version'];
+    $data['update'] = "1";
 } else {
     
     $data['update'] = "0";
