@@ -19,6 +19,7 @@ define("host","localhost");
 define("db_user","root");
 
 define("db_pass","StarGames@2023");
+// define("db_pass","");
 
 define("db_name","andrqeah_star_games");
 
@@ -60,7 +61,7 @@ function verification(){
 }
 
 
-include "/home2/srkgac2u/public_html/functions.php";
+// include "/home2/srkgac2u/public_html/functions.php";
 
 function sendNotiicaton($body,$title, $topic = "all"){
     

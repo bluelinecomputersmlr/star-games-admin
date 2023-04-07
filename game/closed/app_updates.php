@@ -8,7 +8,7 @@ if (!checks("admin"))
 if(isset($_REQUEST['delete'])){
     $sn = $_REQUEST['delete'];
     
-    query("delete from app_updates where sn='$sn'");
+    query("delete from app_updates_new where id='$sn'");
 }
 
 
@@ -61,7 +61,7 @@ if(isset($_REQUEST['delete'])){
                                                 <tr>
                                                     <th>Sn</th>
                                                     <th>Version</th>
-                                                    <th>Link</th>
+                                                    <!-- <th>Link</th> -->
                                                     <th>Release notes</th>
                                                     <th>Action</th>
                                                 </tr>
@@ -70,7 +70,7 @@ if(isset($_REQUEST['delete'])){
                                             
                                             <?php
                                             $i = 1;
-                                            $get = query("select * from app_updates order by version desc");
+                                            $get = query("select * from app_updates_new order by app_updates_new.id desc");
                                             while($xc = fetch($get))
                                             { ?>
                                             
@@ -78,11 +78,10 @@ if(isset($_REQUEST['delete'])){
                                             
                                             <tr>
                                                 <td><?php echo $i; $i++; ?></td>
-                                                <td><?php echo $xc['version']; ?></td>
-                                                <td><?php echo $xc['link']; ?></td>
-                                                <td><?php echo $xc['log']; ?></td>
+                                                <td><?php echo $xc['appVersion']; ?></td>
+                                                <td><?php echo $xc['appName']; ?></td>
                                                 <td>
-                                                    <a href="app_updates.php?delete=<?php echo $xc['sn']; ?>"> <button class="btn btn-outline-info" onclick="return confirm('Are you sure you want to remove this')">Delete</button> </a>
+                                                    <a href="app_updates.php?delete=<?php echo $xc['id']; ?>"> <button class="btn btn-outline-info" onclick="return confirm('Are you sure you want to remove this')">Delete</button> </a>
                                                 </td>
                                             </tr>
                                             

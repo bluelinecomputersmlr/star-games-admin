@@ -14,11 +14,11 @@ if (isset($_REQUEST['submit']))
     $market = filter_var($market, FILTER_SANITIZE_STRING);
     
     
-    if(rows(query("select sn from app_updates where version >= $version")) == 0){
+    if(rows(query("select id from app_updates_new where appVersion >= $version")) == 0){
         
         
         
-        query("INSERT INTO `app_updates`(`link`, `log`, `version`) VALUES ('$link','$log','$version')");
+        query("INSERT INTO `app_updates_new`(`appName`, `appVersion`,`isLive`) VALUES ('Star Games','$version',1)");
         
         redirect("app_updates.php");
         
@@ -80,15 +80,15 @@ if (isset($_REQUEST['submit']))
 
                                 <form class="forms-sample" method="post" enctype="multipart/form-data">
                                      
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="link">APK Link ( with http or https )</label>
                                         <input type="text" class="form-control" id="link" name="link" required>
-                                    </div>
+                                    </div> -->
                                     
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="log">Release notes</label>
                                         <textarea type="text" class="form-control" id="log" name="log"></textarea>
-                                    </div>
+                                    </div> -->
                                     
                                     <div class="form-group">
                                         <label for="version">Version (version must be higher and same within the application)</label>
