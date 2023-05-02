@@ -58,6 +58,8 @@ if ($get_data['type'] != "paytm") {
 
 
     $data['success'] = "1";
+  } else {
+    $data['success'] = "1";
   }
 
 } else {

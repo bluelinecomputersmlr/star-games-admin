@@ -320,13 +320,18 @@ for ($a = 0; $a < count($am); $a++) {
 
     //  query("update users set wallet=wallet-'$amoun' where mobile='$mobile'");
 
-    query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1')");
-    $game_data = fetch(query("SELECT sn FROM `games` WHERE `user`='$mobile' AND `game`='$game' AND `bazar` = '$bazar2' AND `date`='$date' AND `number`='$numbe' AND `amount`='$amoun' AND `created_at`='$stamp'"));
-    $game_id = $game_data["sn"];
-    query("INSERT INTO `transactions`( `user`, `amount`, `type`, `remark`, `owner`,`game_id` ,`created_at`,`in_type`) VALUES ('$mobile','$amoun','3','Bet placed','user','$game_id','$stamp','0')");
+    // query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1')");
+    // $game_data = fetch(query("SELECT sn FROM `games` WHERE `user`='$mobile' AND `game`='$game' AND `bazar` = '$bazar2' AND `date`='$date' AND `number`='$numbe' AND `amount`='$amoun' AND `created_at`='$stamp'"));
+    // $game_id = $game_data["sn"];
+    // query("INSERT INTO `transactions`( `user`, `amount`, `type`, `remark`, `owner`,`game_id` ,`created_at`,`in_type`) VALUES ('$mobile','$amoun','3','Bet placed','user','$game_id','$stamp','0')");
 
     // $data['qq'] = "INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1')";
 }
+
+query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$number','$amount','$stamp','1')");
+$game_data = fetch(query("SELECT sn FROM `games` WHERE `user`='$mobile' AND `game`='$game' AND `bazar` = '$bazar2' AND `date`='$date' AND `number`='$number' AND `amount`='$amount' AND `created_at`='$stamp'"));
+$game_id = $game_data["sn"];
+query("INSERT INTO `transactions`( `user`, `amount`, `type`, `remark`, `owner`,`game_id` ,`created_at`,`in_type`) VALUES ('$mobile','$amount','3','Bet placed','user','$game_id','$stamp','0')");
 
 query("INSERT INTO `notifications`( `msg`, `created_at`) VALUES ('$msg','$stamp')");
 
