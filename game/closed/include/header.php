@@ -381,7 +381,7 @@ function removeElement(id) {
                 
                    
                 <li class="nav-item">
-                    <a class="nav-link" href="withdraw_requests.php">
+                    <a class="nav-link" href="withdraw_completed.php">
                         <i class="ti-user menu-icon"></i>
                         <span class="menu-title">Withdraw Completed</span>
                     </a>
@@ -436,6 +436,13 @@ function removeElement(id) {
                     <a class="nav-link" href="transactions.php">
                         <i class="ti-crown menu-icon"></i>
                         <span class="menu-title">All Transactions</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="day_profit_report.php">
+                        <i class="ti-crown menu-icon"></i>
+                        <span class="menu-title">Day Profit</span>
                     </a>
                 </li>
                 
