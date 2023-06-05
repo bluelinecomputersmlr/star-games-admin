@@ -64,9 +64,7 @@ if (rows($get_mrkt) == 0) {
             $data['msg'] = "We are not able to get market details, Please restart application and try again";
             echo json_encode($data);
             return;
-
         }
-
     }
 }
 
@@ -86,7 +84,6 @@ if ($xc['days'] == "ALL" || substr_count($xc['days'], $day) == 0) {
     } else {
         $xc['is_close'] = "0";
     }
-
 } else if (substr_count($xc['days'], $day . "(CLOSE)") > 0) {
 
 
@@ -94,8 +91,6 @@ if ($xc['days'] == "ALL" || substr_count($xc['days'], $day) == 0) {
     $data['msg'] = "Market already closeed, Try again later";
     echo json_encode($data);
     return;
-
-
 } else {
     $time_array = explode(",", $xc['days']);
     for ($i = 0; $i < count($time_array); $i++) {
@@ -178,10 +173,7 @@ for ($a = 0; $a < count($am); $a++) {
             $data['msg'] = "Market already closeed, Try again later";
             echo json_encode($data);
             return;
-
         }
-
-
     } else if (strpos($bazar2, 'CLOSE') !== false) {
 
         if ($xc['is_close'] == "0") {
@@ -204,12 +196,8 @@ for ($a = 0; $a < count($am); $a++) {
                 $data['msg'] = "Market already closeed, Try again later";
                 echo json_encode($data);
                 return;
-
             }
-
-
         }
-
     } else if ($game == "jodi" || $game == "halfsangam" || $game == "fullsangam") {
 
         if ($xc['is_open'] == "0") {
@@ -227,9 +215,7 @@ for ($a = 0; $a < count($am); $a++) {
             $data['msg'] = "Market already closeed, Try again later";
             echo json_encode($data);
             return;
-
         }
-
     }
 
 
@@ -250,7 +236,6 @@ for ($a = 0; $a < count($am); $a++) {
         }
 
         $wallet = $amoun - $bonus;
-
     } else {
         $bonus = 0;
     }
@@ -261,7 +246,6 @@ for ($a = 0; $a < count($am); $a++) {
         $data['msg'] = "You don't have enough wallet balance to place this bets";
         echo json_encode($data);
         return;
-
     } else {
 
         if ((int) $check_wallet['wallet'] < (int) $wallet) {
@@ -270,11 +254,9 @@ for ($a = 0; $a < count($am); $a++) {
             $wallet = $wallet - $deposit;
 
             $winning = $wallet;
-
         } else {
             $deposit = $wallet;
         }
-
     }
 
 
@@ -316,6 +298,7 @@ for ($a = 0; $a < count($am); $a++) {
 
     $msg = $msg . "( Market - " . $bazar2 . " , Num-" . $numbe . " - " . $amoun . "INR )";
 
+    query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1')");
 
 
     //  query("update users set wallet=wallet-'$amoun' where mobile='$mobile'");
@@ -328,8 +311,8 @@ for ($a = 0; $a < count($am); $a++) {
     // $data['qq'] = "INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1')";
 }
 
-query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$number','$amount','$stamp','1')");
-$game_data = fetch(query("SELECT sn FROM `games` WHERE `user`='$mobile' AND `game`='$game' AND `bazar` = '$bazar2' AND `date`='$date' AND `number`='$number' AND `amount`='$amount' AND `created_at`='$stamp'"));
+query("INSERT INTO `single_games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$number','$amount','$stamp','1')");
+$game_data = fetch(query("SELECT sn FROM `single_games` WHERE `user`='$mobile' AND `game`='$game' AND `bazar` = '$bazar2' AND `date`='$date' AND `number`='$number' AND `amount`='$amount' AND `created_at`='$stamp'"));
 $game_id = $game_data["sn"];
 query("INSERT INTO `transactions`( `user`, `amount`, `type`, `remark`, `owner`,`game_id` ,`created_at`,`in_type`) VALUES ('$mobile','$amount','3','Bet placed','user','$game_id','$stamp','0')");
 
