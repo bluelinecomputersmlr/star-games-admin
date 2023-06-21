@@ -26,6 +26,10 @@ $hash = openssl_encrypt($order_id, "AES-128-ECB", $_REQUEST['hash_key']);
 $data['hash2'] = $hash;
 
 
+query("update users set wallet=wallet+".$amount." where mobile='".$mobile."' ");
+
+query("INSERT INTO `transactions`(`user`, `amount`, `type`, `remark`, `owner`, `created_at`, `game_id`, `batch_id`, `in_type`, `wallet_type`) VALUES ('$mobile','$amount','1','UPI Payment','user','$stamp','','','UPI','1')");
+
 $gateway = query("INSERT INTO `gateway_temp`( `user`, `amount`, `hash`, `type`) VALUES ('$mobile','$amount','$hash','$type')");
 
 
