@@ -12,7 +12,8 @@ if(!isset($_REQUEST['date'])){
     $date = date("d/m/Y");
 }
 
-$sn = $_REQUEST['sn'];
+// $sn = $_REQUEST['sn'];
+$sn = 0;
 
 
 
