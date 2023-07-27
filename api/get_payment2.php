@@ -49,9 +49,9 @@ if ($get_data['type'] != "paytm") {
     $refer_mobile = $get_refer_mobile['mobile'];
 
 
-    $amount = $amount * 10 / 100;
+    // $amount = $amount * 10 / 100;
     // query("update refers set status='1', amount='$amount' where user='$mobile' AND code='$code'");
-    query("update users set wallet=wallet+'$amount' where mobile='$refer_mobile'");
+    // query("update users set wallet=wallet+'$amount' where mobile='$refer_mobile'");
 
     query("INSERT INTO `transactions`( `user`, `amount`, `type`, `remark`, `owner`, `created_at`) VALUES ('$refer_mobile','$amount','1','Refer earning','user','$stamp')");
 
