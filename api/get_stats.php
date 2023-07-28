@@ -9,6 +9,7 @@ $m2 = str_replace(" ","_",$market);
 
 $date = date("d/m/Y");
 
+$data = [];
 
 $get_total = fetch((query("SELECT count(sn) as counting FROM `games` where bazar='$m0' AND game='single' AND date='$date'")));
 $total = $get_total['counting'];
@@ -17,7 +18,6 @@ $sx = query("SELECT *,count(*) as counting FROM `games` where bazar='$m0' AND ga
 
 while($x = fetch($sx))
 {
-    
     $row['number'] = $x['number'];
     $row['stats'] = round($x['counting']/$total*100);
     
