@@ -28,6 +28,19 @@ if (rows(query("select sn from users where mobile='$mobile' and session ='$sessi
     $data['active'] = "1";
 }
 
+function generateUniqueID()
+{
+    $characters = '0123456789';
+    $uniqueID = '';
+
+    for ($i = 0; $i < 6; $i++) {
+        $index = rand(0, strlen($characters) - 1);
+        $uniqueID .= $characters[$index];
+    }
+
+    return $uniqueID;
+}
+
 $time = date("H:i", $stamp);
 $day = strtoupper(date("l", $stamp));
 
@@ -298,7 +311,9 @@ for ($a = 0; $a < count($am); $a++) {
 
     $msg = $msg . "( Market - " . $bazar2 . " , Num-" . $numbe . " - " . $amoun . "INR )";
 
-    query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1')");
+    $uniqueID = generateUniqueID();
+
+    query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`,`bid_id`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1','$uniqueID')");
 
 
     //  query("update users set wallet=wallet-'$amoun' where mobile='$mobile'");
@@ -310,20 +325,8 @@ for ($a = 0; $a < count($am); $a++) {
 
     // $data['qq'] = "INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`) VALUES ('$mobile','$game','$bazar2','$date','$numbe','$amoun','$stamp','1')";
 }
-function generateUniqueID() {
-    $characters = '0123456789';
-    $uniqueID = '';
-    
-    for ($i = 0; $i < 6; $i++) {
-        $index = rand(0, strlen($characters) - 1);
-        $uniqueID .= $characters[$index];
-    }
-    
-    return $uniqueID;
-}
 
-$uniqueID = generateUniqueID();
-query("INSERT INTO `single_games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`,`bid_id`) VALUES ('$mobile','$game','$bazar2','$date','$number','$amount','$stamp','1','$uniqueID')");
+query("INSERT INTO `single_games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`,`bid_id`) VALUES ('$mobile','$game','$bazar2','$date','$number','$amount','$stamp','1','')");
 $game_data = fetch(query("SELECT sn FROM `single_games` WHERE `user`='$mobile' AND `game`='$game' AND `bazar` = '$bazar2' AND `date`='$date' AND `number`='$number' AND `amount`='$amount' AND `created_at`='$stamp'"));
 $game_id = $game_data["sn"];
 query("INSERT INTO `transactions`( `user`, `amount`, `type`, `remark`, `owner`,`game_id` ,`created_at`,`in_type`) VALUES ('$mobile','$amount','3','Bet placed','user','$game_id','$stamp','0')");
