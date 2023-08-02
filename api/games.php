@@ -60,9 +60,11 @@ while ($x = fetch($sx)) {
         $x['game'] = $x['game'] . ' Close';
     }
 
+    $val_date = date('d M Y', $x['created_at']);
 
+    $key_val = "dates_".$val_date;
 
-    $data[date('d M Y', $x['created_at'])][] = $x;
+    $data[$key_val][] = $x;
 }
 
 
