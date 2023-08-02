@@ -6,8 +6,14 @@ extract($_REQUEST);
 $xvm = query("select * from rate where sn='1'");
 $xv = fetch($xvm);
 
-if (isset($_REQUEST['market'])) {
+//$_REQUEST['mobile']='mobile=8105661676_MAIN BAZAR';
 
+$req_params = explode("_",$_REQUEST['mobile']);
+
+//if (isset($_REQUEST['market'])) {
+if (isset($req_params[1])) {
+    $market = $req_params[1];
+    $mobile = $req_params[0];
     $m0 = str_replace(" ", "_", $market . ' OPEN');
     $m1 = str_replace(" ", "_", $market . ' CLOSE');
     $m2 = str_replace(" ", "_", $market);
