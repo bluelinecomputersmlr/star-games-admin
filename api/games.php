@@ -8,7 +8,7 @@ $xv = fetch($xvm);
 
 //$_REQUEST['mobile']='mobile=8105661676_MAIN BAZAR';
 
-$req_params = explode("_",$_REQUEST['mobile']);
+$req_params = explode("_", $_REQUEST['mobile']);
 
 //if (isset($_REQUEST['market'])) {
 if (isset($req_params[1])) {
@@ -26,6 +26,7 @@ if (isset($req_params[1])) {
 }
 
 $data = [];
+// $data['dates'][] = array();
 while ($x = fetch($sx)) {
     $x['date'] = date('d M Y h:i A', $x['created_at']);
     $date = date('d M Y', $x['created_at']);
@@ -34,6 +35,8 @@ while ($x = fetch($sx)) {
         if (!in_array($date, $data['dates'])) {
             $data['dates'][] = $date;
         }
+    } else {
+        $data['dates'][] = $date;
     }
 
     $m02 = str_replace('_OPEN', "", $x['bazar']);
@@ -60,14 +63,12 @@ while ($x = fetch($sx)) {
         $x['game'] = $x['game'] . ' Close';
     }
 
-    $val_date = date('d M Y', $x['created_at']);
+    // $val_date = date('d M Y', $x['created_at']);
 
-    $key_val = "dates_".$val_date;
+    // $key_val = "dates_".$val_date;
 
-    $data[$key_val][] = $x;
+    // $data[$key_val][] = $x;
+    $data[date('d M Y', $x['created_at'])][] = $x;
 }
-
-
-
 
 echo json_encode($data);
