@@ -68,6 +68,15 @@ $uniqueID = generateUniqueID();
 
 query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`,`bid_id`) VALUES ('$mobile','$game','$bazar','$date','$number','$amount','$stamp','$uniqueID')");
 
+query("INSERT INTO `single_games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`, `wallet_type`,`bid_id`) VALUES ('$mobile','$game','$bazar','$date','$number','$amount','$stamp','1','')");
+
+$game_data = fetch(query("SELECT sn FROM `single_games` WHERE `user`='$mobile' AND `game`='$game' AND `bazar` = '$bazar' AND `date`='$date' AND `number`='$number' AND `amount`='$amount' AND `created_at`='$stamp'"));
+
+$game_id = $game_data["sn"];
+
+query("INSERT INTO `transactions`( `user`, `amount`, `type`, `remark`, `owner`,`game_id` ,`created_at`,`in_type`) VALUES ('$mobile','$amount','3','Bet placed','user','$game_id','$stamp','0')");
+
+
 $data['success'] = "1";
 
 echo json_encode($data);
