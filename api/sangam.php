@@ -9,6 +9,19 @@ $check = query("select wallet,winning,bonus from users where mobile='$mobile'");
 $check_wallet = fetch($check);
 
 $wallet = $total;
+
+function generateUniqueID()
+{
+    $characters = '0123456789';
+    $uniqueID = '';
+
+    for ($i = 0; $i < 6; $i++) {
+        $index = rand(0, strlen($characters) - 1);
+        $uniqueID .= $characters[$index];
+    }
+
+    return $uniqueID;
+}
             
 if($check_wallet['bonus'] > 0){
     
@@ -51,8 +64,9 @@ if(($check_wallet['wallet']+$check_wallet['winning']) < $wallet){
 
 query("update users set wallet=wallet-'$deposit', winning=winning-'$winning', bonus=bonus-'$bonus' where mobile='$mobile'");
     
+$uniqueID = generateUniqueID();
 
-query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`) VALUES ('$mobile','$game','$bazar','$date','$number','$amount','$stamp')");
+query("INSERT INTO `games`(`user`, `game`, `bazar`, `date`, `number`, `amount`, `created_at`,`bid_id`) VALUES ('$mobile','$game','$bazar','$date','$number','$amount','$stamp','$uniqueID')");
 
 $data['success'] = "1";
 
