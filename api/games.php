@@ -11,7 +11,7 @@ $xv = fetch($xvm);
 $req_params = explode("_", $_REQUEST['mobile']);
 
 //if (isset($_REQUEST['market'])) {
-if (isset($req_params[1])) {
+if (isset($req_params[1])&&$req_params[1]!="") {
     $market = $req_params[1];
     $mobile = $req_params[0];
     $m0 = str_replace(" ", "_", $market . ' OPEN');
@@ -21,7 +21,8 @@ if (isset($req_params[1])) {
 
     $sx = query("SELECT * FROM `games` where user='$mobile' AND (bazar='$m0' OR bazar='$m1' OR bazar='$m2') order by created_at desc");
 } else {
-
+    $mobile = $req_params[0];
+    
     $sx = query("SELECT * FROM `games` where user='$mobile' order by created_at desc");
 }
 
