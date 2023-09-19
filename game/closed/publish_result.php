@@ -321,6 +321,8 @@ if (isset($_REQUEST['submit']))
     unset($close);
     unset($cpanna);
 
+    redirect("publish_result.php");
+
 }
 
 
@@ -645,6 +647,8 @@ if(isset($_REQUEST['submit_manual'])){
     unset($opanna);
     unset($close);
     unset($cpanna);
+
+    redirect("publish_result.php");
     
 }
 
