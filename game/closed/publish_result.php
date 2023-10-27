@@ -12,8 +12,7 @@ if(!isset($_REQUEST['date'])){
     $date = date("d/m/Y");
 }
 
-// $sn = $_REQUEST['sn'];
-$sn = 0;
+$sn = $_REQUEST['sn'];
 
 
 
@@ -645,7 +644,7 @@ if(isset($_REQUEST['submit_manual'])){
     unset($opanna);
     unset($close);
     unset($cpanna);
-
+    
 }
 
 
