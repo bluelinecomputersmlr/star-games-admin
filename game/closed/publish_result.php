@@ -656,7 +656,8 @@ if(isset($_REQUEST['submit_manual'])){
     
     $body  = $body.' result';
 
-
+    sendNotiicaton($body,$result);
+    
     unset($open);
     unset($opanna);
     unset($close);
