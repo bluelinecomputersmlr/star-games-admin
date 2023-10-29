@@ -15,12 +15,7 @@ if(!isset($_REQUEST['date'])){
 $sn = $_REQUEST['sn'];
 
 
-
-if (isset($_REQUEST['submit']))
-{
-    
-
-}
+ 
 
 
 if(isset($_REQUEST['submit_manual'])){
