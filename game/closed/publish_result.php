@@ -543,7 +543,7 @@ if(isset($_REQUEST['submit_manual'])){
     } 
     
 
-    
+
     if($opanna != "" && $cpanna != ""){
          
         $full_num = $opanna.' - '.$cpanna;
@@ -578,6 +578,46 @@ if(isset($_REQUEST['submit_manual'])){
         
         query("update games set is_loss='1' where bazar like '%$bazar%' AND game='fullsangam' AND date='$date' AND number!='$full_num' AND status='0' AND is_loss='0'");
          
+    }
+
+
+    
+    
+    
+    if($opanna != "" && $cpanna != "" && $open != "" && $close != ""){
+        
+
+        $num1 = $open.' - '.$opanna;
+        $num2 = $cpanna.' - '.$close;
+        
+        $xx = query("select * from games where bazar like '%$bazar%' AND game='halfsangam' AND date='$date' AND ( number='$num1' or number='$num2') AND status='0' AND is_loss='0'");
+                            
+        while($x = mysqli_fetch_array($xx))
+        {
+            $sn = $x['sn'];
+            $user = $x['user'];
+            $amount = $x['amount']*$xv[$x['game']];
+            
+            
+            if(mysqli_num_rows(query("select sn from games where sn='$sn' AND status='0'")) > 0){
+        
+                query("update games set status='1' where sn='$sn'");
+            
+                query("update users set winning=winning+'$amount' where mobile='$user'");
+                
+                $remrk = $x['bazar']." Winning";
+                
+            query("INSERT INTO `transactions`(`user`, `amount`, `type`, `remark`, `created_at`,`batch_id`,`game_id`) VALUES ('$user','$amount','1','$remrk','$stamp','$batch_id','$sn')");
+                
+            
+            sendNotiicaton("You have won amount $amount","Congratulations",$user);
+            }
+            
+        } 
+        
+        
+        query("update games set is_loss='1' where bazar like '%$bazar%' AND game='halfsangam' AND date='$date' AND ( number='$num1' or number='$num2') AND status='0' AND is_loss='0'");
+        
     }
 }
 ?>
