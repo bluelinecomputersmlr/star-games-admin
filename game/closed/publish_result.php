@@ -322,6 +322,9 @@ if (isset($_REQUEST['submit']))
 
 }
 
+if(isset($_REQUEST['submit_manual'])){
+    extract($_REQUEST);
+}
 ?>
 
 <!DOCTYPE html>
