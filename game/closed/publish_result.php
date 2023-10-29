@@ -581,7 +581,7 @@ if(isset($_REQUEST['submit_manual'])){
     }
 
 
-    
+
     
     
     if($opanna != "" && $cpanna != "" && $open != "" && $close != ""){
@@ -619,6 +619,34 @@ if(isset($_REQUEST['submit_manual'])){
         query("update games set is_loss='1' where bazar like '%$bazar%' AND game='halfsangam' AND date='$date' AND ( number='$num1' or number='$num2') AND status='0' AND is_loss='0'");
         
     }
+
+    
+    
+     $result = "";
+    
+    if($opanna != ""){
+        $result = $opanna.'-';
+    } else {
+        $result = "***-";
+    }    
+    
+    if($open != ""){
+        $result .= $open;
+    } else {
+        $result .= "*";
+    }   
+    
+    if($close != ""){
+        $result .= $close.'-';
+    } else {
+        $result .= "*".'-';
+    }   
+    
+    if($cpanna != ""){
+        $result .= $cpanna;
+    } else {
+        $result .= "***";
+    } 
 }
 ?>
 
