@@ -648,13 +648,19 @@ if(isset($_REQUEST['submit_manual'])){
         $result .= "***";
     } 
 
-    
+
     
     $body = str_replace("_"," ",$bazar);
     $body = str_replace("OPEN","",$body);
     $body = str_replace("CLOSE","",$body);
     
     $body  = $body.' result';
+
+
+    unset($open);
+    unset($opanna);
+    unset($close);
+    unset($cpanna);
 }
 ?>
 
