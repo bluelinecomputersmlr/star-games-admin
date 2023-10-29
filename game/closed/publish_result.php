@@ -653,13 +653,10 @@ if(isset($_REQUEST['submit_manual'])){
     // $body = str_replace("_"," ",$bazar);
     // $body = str_replace("OPEN","",$body);
     // $body = str_replace("CLOSE","",$body);
-    $body='';
     
-    $body  = $body.' result';
+    // $body  = $body.' result';
 
-    $result='';
-
-    sendNotiicaton($body,$result);
+    sendNotiicaton('hbguhb','hbguhb');
 
     unset($open);
     unset($opanna);
