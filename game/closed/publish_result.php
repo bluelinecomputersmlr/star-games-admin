@@ -620,7 +620,7 @@ if(isset($_REQUEST['submit_manual'])){
         
     }
 
-    
+
     
      $result = "";
     
@@ -647,6 +647,14 @@ if(isset($_REQUEST['submit_manual'])){
     } else {
         $result .= "***";
     } 
+
+    
+    
+    $body = str_replace("_"," ",$bazar);
+    $body = str_replace("OPEN","",$body);
+    $body = str_replace("CLOSE","",$body);
+    
+    $body  = $body.' result';
 }
 ?>
 
