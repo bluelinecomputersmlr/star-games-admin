@@ -324,6 +324,7 @@ if (isset($_REQUEST['submit']))
 
 if(isset($_REQUEST['submit_manual'])){
     extract($_REQUEST);
+
     if(strlen($opanna) != 3 || strlen($open) != 1){
         redirect("publish_result.php?error=invalid%20result");
     }
@@ -338,6 +339,19 @@ if(isset($_REQUEST['submit_manual'])){
         query("INSERT INTO `manual_market_results`(`market`, `date`, `open_panna`, `open`, `close`, `close_panna`, `created_at`) VALUES ('$market','$date','$opanna','$open','$close','$cpanna','$stamp')");
         
     }
+
+    ////////////////////////
+     //// CREATING BATCH /////
+    /////////////////////////
+    
+    $batch_id = md5($stamp.$market.rand().$open.$close.$date.$day.$time);
+    
+    $batch_result = $opanna.'-'.$open.$close.'-'.$cpanna;
+        
+    query("INSERT INTO `manual_batch`( `market`, `result`, `revert`, `created_at`, `batch_id`) VALUES ('$market','$batch_result','0','$stamp','$batch_id')");
+    
+    $xvm = query("select * from rate where sn='1'");
+    $xv = fetch($xvm);
 }
 ?>
 
