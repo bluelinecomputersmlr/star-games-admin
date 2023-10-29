@@ -352,6 +352,40 @@ if(isset($_REQUEST['submit_manual'])){
     
     $xvm = query("select * from rate where sn='1'");
     $xv = fetch($xvm);
+
+
+     if($open != ""){
+        
+        $mrk = str_replace(" ","_",$market.' OPEN');
+    
+        $xx = query("select * from games where bazar='$mrk' AND game='single' AND date='$date' AND number='$open' AND status='0' AND is_loss='0'");
+     
+        
+        while($x = fetch($xx))
+        {
+            $sn = $x['sn'];
+            $user = $x['user'];
+            $amount = $x['amount']*$xv[$x['game']];
+            
+            $remrk = $x['bazar']." Winning";
+        
+            query("update games set status='1' where sn='$sn'");
+            
+          
+            query("update users set winning=winning+'$amount' where mobile='$user'");
+            
+            query("INSERT INTO `transactions`(`user`, `amount`, `type`, `remark`, `created_at`,`batch_id`,`game_id`) VALUES ('$user','$amount','1','$remrk','$stamp','$batch_id','$sn')");
+            
+           
+
+            sendNotiicaton("You have won amount $amount","Congratulations",$user);
+            
+        }
+        
+        query("UPDATE games set is_loss='1' where bazar='$mrk' AND game='single' AND date='$date' AND number!='$open' AND is_loss='0'");
+        
+    
+    }
 }
 ?>
 
