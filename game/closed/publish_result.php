@@ -324,6 +324,20 @@ if (isset($_REQUEST['submit']))
 
 if(isset($_REQUEST['submit_manual'])){
     extract($_REQUEST);
+    if(strlen($opanna) != 3 || strlen($open) != 1){
+        redirect("publish_result.php?error=invalid%20result");
+    }
+    
+    $chk_if_query = query("select sn from manual_market_results where market='$market' AND date='$date'");
+    if(rows($chk_if_query) > 0){
+        $chk_if_updated = fetch($chk_if_query);
+        $sn = $chk_if_updated['sn'];
+        query("update manual_market_results set close='$close', close_panna='$cpanna' where sn='$sn'");
+    } else {
+        
+        query("INSERT INTO `manual_market_results`(`market`, `date`, `open_panna`, `open`, `close`, `close_panna`, `created_at`) VALUES ('$market','$date','$opanna','$open','$close','$cpanna','$stamp')");
+        
+    }
 }
 ?>
 
