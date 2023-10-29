@@ -425,7 +425,7 @@ if(isset($_REQUEST['submit_manual'])){
     
     }
     
-    
+
     if($close != ""){
         
         
@@ -457,6 +457,45 @@ if(isset($_REQUEST['submit_manual'])){
         
         
         query("UPDATE games set is_loss='1' where bazar='$bazar' AND game='single' AND date='$date' AND number!='$close' AND status='0' AND is_loss='0'");
+    
+    }
+
+
+
+    
+    
+    if($cpanna != ""){
+        
+        
+        $bazar = str_replace(" ","_",$market.' CLOSE');
+        
+        $xx = query("select * from games where bazar='$bazar' AND ( game='singlepatti' OR  game='doublepatti' OR  game='triplepatti' ) AND date='$date' AND number='$cpanna' AND status='0' AND is_loss='0'");
+        
+                            
+        while($x = mysqli_fetch_array($xx))
+        {
+            $sn = $x['sn'];
+            $user = $x['user'];
+            $amount = $x['amount']*$xv[$x['game']];
+            
+            
+            if(mysqli_num_rows(query("select sn from games where sn='$sn' AND status='0' AND is_loss='0'")) > 0){
+        
+                query("update games set status='1' where sn='$sn'");
+            
+                query("update users set winning=winning+'$amount' where mobile='$user'");
+                
+                $remrk = $x['bazar']." Panna Winning";
+                
+            query("INSERT INTO `transactions`(`user`, `amount`, `type`, `remark`, `created_at`,`batch_id`,`game_id`) VALUES ('$user','$amount','1','$remrk','$stamp','$batch_id','$sn')");
+                
+            sendNotiicaton("You have won amount $amount","Congratulations",$user);
+            
+            }
+            
+        } 
+        
+        query("UPDATE games set is_loss='1' where bazar='$bazar' AND ( game='singlepatti' OR  game='doublepatti' OR  game='triplepatti' ) AND date='$date' AND number!='$cpanna' AND status='0' AND is_loss='0'");
     
     }
 }
